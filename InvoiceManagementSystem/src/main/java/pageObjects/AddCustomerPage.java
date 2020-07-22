@@ -58,7 +58,14 @@ public class AddCustomerPage {
         phone.sendKeys(phoneVal);
     }
 
-    @FindBy(id = "address")
+    @FindBy(id="address")
+    WebElement address;
+
+    public void enterAddress(String addressVal){
+        address.sendKeys(addressVal);
+    }
+
+    @FindBy(id = "city")
     WebElement city;
 
     public void enterCity(String cityVal){

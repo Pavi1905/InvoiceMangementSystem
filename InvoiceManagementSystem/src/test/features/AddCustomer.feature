@@ -13,14 +13,16 @@ Feature: Add Customer Feature
     Given I Open Invoice Application Home URL as "http://3.13.126.58/AMS3.0/home"
     When  I click Add customers sub menu from customers menu
     Then  I should landed in Add new Customer Page with message as "Please enter the information below."
-    When  I enter Company as "ERPTraining"
+    When  I enter Company as "abcd"
     And   I enter Contact Person as "Trainer"
-    And   I enter Email Address as "internship15@gmail.com"
+    And   I enter Email Address as "internship24@gmail.com"
     And   I enter Phone as "0712345678"
-    And   I enter city as "London"
+    And   I enter Address as "Cranbrook Road"
+    And   I enter city as "Braintree"
     And   I enter County as "Essex"
     And   I enter Postcode as "CM7 3IG"
     And   I enter Country as "UnitedKingdom"
     And   I click Add Customer Button
+    Then  I should be able to add new customer into the system
 
 
