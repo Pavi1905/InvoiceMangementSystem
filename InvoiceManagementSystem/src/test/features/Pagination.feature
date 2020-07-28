@@ -14,6 +14,6 @@ Feature:Pagination under List Customer Page
 
     Examples:
       | PageSize | No of entries                 |
-      | 10       | Showing 1 to 10 of 67 entries |
-      | All      | Showing 1 to 67 of 67 entries |
-      | 50       | Showing 1 to 50 of 67 entries |
+      | 10       | Showing 1 to 10 of 68 entries |
+      | All      | Showing 1 to 68 of 68 entries |
+      | 50       | Showing 1 to 50 of 68 entries |

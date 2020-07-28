@@ -7,7 +7,7 @@ import functionLibrary.CommonFunctions;
 
 import pageObjects.LoginPage;
 
-public class LoginStepdef extends CommonFunctions {
+public class Login extends CommonFunctions {
 
     LoginPage login = new LoginPage(driver);
 

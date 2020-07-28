@@ -9,7 +9,7 @@ import functionLibrary.CommonFunctions;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 
-public class AddCustomerStepDef extends CommonFunctions {
+public class AddCustomer extends CommonFunctions {
 
     AddCustomerPage addCustomer = new AddCustomerPage(driver);
 

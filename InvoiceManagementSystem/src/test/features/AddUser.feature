@@ -10,6 +10,7 @@ Feature: Add User Feature
     Then  I should be able to successfully login and landed in Home Page with message as "Logged In Successfully"
     Given I Open Invoice Application Home URL as "http://3.13.126.58/AMS3.0/home"
     When  I click List customers sub menu from customers menu
+    And   I select page Size as "All"
     When  I click Add User Button for newly added Customer
     When  I enter FirstName as "user1"
     And   I enter LastName as "ERP"
@@ -18,4 +19,5 @@ Feature: Add User Feature
     And   I enter userpassword as "selenium@123"
     And   I enter confirmpassword as "selenium@123"
     And   I click Add user Button
+    Then  I should be landed on Add user Page with successfull message as "Add User"
 

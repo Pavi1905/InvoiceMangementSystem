@@ -69,6 +69,7 @@ public class AddCustomerPage {
     WebElement city;
 
     public void enterCity(String cityVal){
+        city.clear();
         city.sendKeys(cityVal);
     }
 

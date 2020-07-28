@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import functionLibrary.CommonFunctions;
 import pageObjects.ListCustomerPage;
 
-public class AddUserStepDef extends CommonFunctions {
+public class AddUser extends CommonFunctions {
 
     ListCustomerPage listCustomer = new ListCustomerPage(driver);
 
@@ -55,7 +55,11 @@ public class AddUserStepDef extends CommonFunctions {
     @When("^I click Add user Button$")
     public void i_click_Add_user_Button()  {
         listCustomer.setClickAddUser();
-        
     }
 
+    @Then("^I should be landed on Add user Page with successfull message as \"([^\"]*)\"$")
+    public void iShouldBeLandedOnAddUserPageWithSuccessfullMessageAs(String arg0)  {
+
+
+    }
 }
