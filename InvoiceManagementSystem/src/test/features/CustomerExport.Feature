@@ -11,10 +11,10 @@ Feature: Customer Export Feature
     When  I click List customers sub menu from customers menu
     And   I select page Size as "All"
     And   I click export option as "<export Options>"
-    Then  I should be able to download all the customers with filename as ""
+    Then  I should be able to download all the customers with filename as "<fileName>"
 
     Examples:
-    |export Options|
-    |Excel         |
-    |csv           |
-    |PDF           |
+      | export Options | fileName                         |
+      | Excel          | Customers · Invoice Manager.xlsx |
+      | csv            | Customers · Invoice Manager.csv  |
+      | PDF            | Customers · Invoice Manager.pdf  |
